@@ -25,43 +25,37 @@ import statistics
 #####################################
 
 # declare a boolean variables (have a value True or False)
-# TODO: Add another boolean variable before this one
-has_international_clients: bool = True
+ct_has_international_clients: bool = True
 
 # declare integer variables
-# TODO: Add another integer variable before this one
-years_in_operation: int = 10
+ct_years_num_operational: int = 10
 
 # declare a floating point variables
-# TODO: Add another of floating point variable before this one
-average_client_satisfaction: float = 4.7
+ct_avg_client_satisfaction: float = 4.7
 
 # declare lists of strings
-# TODO: Add another list of strings before this one
-skills_offered: list = ["Data Analysis", "Machine Learning", "Business Intelligence"]
+ct_skills_offered: list = ["Machine Learning", "Data Analysis", "Business Intelligence"]
+
 
 # declare lists of numbers to illustrate statistics skills
-# TODO: Add another numeric list before this one
-client_satisfaction_scores: list = [4.8, 4.6, 4.9, 5.0, 4.7]
+ct_client_satisfaction_scores: list = [4.8, 4.6, 4.9, 5.0, 4.7]
 
 # Calculate basic statistics using built-in Python functions and the statistics module
-# TODO: REPLACE the variable name, e.g. client_satisfaction_scores with your own numeric list variable name in all 4 lines below:
-min_score: float = min(client_satisfaction_scores)  
-max_score: float = max(client_satisfaction_scores)  
-mean_score: float = statistics.mean(client_satisfaction_scores)  
-stdev_score: float = statistics.stdev(client_satisfaction_scores)
+min_score: float = min(ct_client_satisfaction_scores)  
+max_score: float = max(ct_client_satisfaction_scores)  
+mean_score: float = statistics.mean(ct_client_satisfaction_scores)  
+stdev_score: float = statistics.stdev(ct_client_satisfaction_scores)
 
 # Use a Python formatted string (f-string) to show information
-# TODO: Modify the TEXT in the byline to describe your information
-# TODO: Modify the VARIABLE NAMES in the byline to use your variable names
+
 byline: str = f"""
----------------------------------------------------------
-Stellar Analytics: Delivering Professional Insights
----------------------------------------------------------
-Has International Clients:  {has_international_clients}
-Years in Operation:         {years_in_operation}
-Skills Offered:             {skills_offered}
-Client Satisfaction Scores: {client_satisfaction_scores}
+--------------------------------------------------------------
+Mr Tran's Stellar Analytics: Delivering Professional Insights
+--------------------------------------------------------------
+Has International Clients:  {ct_has_international_clients}
+Years in Operation:         {ct_years_num_operational}
+Skills Offered:             {ct_skills_offered}
+Client Satisfaction Scores: {ct_client_satisfaction_scores}
 Minimum Satisfaction Score: {min_score}
 Maximum Satisfaction Score: {max_score}
 Mean Satisfaction Score: {mean_score:.2f}
@@ -106,9 +100,9 @@ def main() -> None:
     Everything after the colon must be indented consistently (usually 4 spaces)
     '''
 
-    print("START main() in utils_case.py")
+    print("START main() in utils_tran.py")
     print(get_byline())
-    print("END main() in utils_case.py")
+    print("END main() in utils_tran.py")
 
 #####################################
 # Conditional Execution
