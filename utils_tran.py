@@ -28,17 +28,17 @@ import statistics
 ct_has_international_clients: bool = True
 
 # declare integer variables
-ct_years_num_operational: int = 10
+ct_years_num_operational: int = 1
 
 # declare a floating point variables
 ct_avg_client_satisfaction: float = 4.7
 
 # declare lists of strings
-ct_skills_offered: list = ["Machine Learning", "Data Analysis", "Business Intelligence"]
+ct_skills_offered: list = ["Data Engineering", "BI Dashboards", "Data Storytelling"]
 
 
 # declare lists of numbers to illustrate statistics skills
-ct_client_satisfaction_scores: list = [4.8, 4.6, 4.9, 5.0, 4.7]
+ct_client_satisfaction_scores: list = [1.9, 1.7, 1.8, 1.0, 1.6]
 
 # Calculate basic statistics using built-in Python functions and the statistics module
 min_score: float = min(ct_client_satisfaction_scores)  
